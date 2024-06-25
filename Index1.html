@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Document</title>
+</head>
+
+<body>
+
+    <script src="index.js">
+        document.write("Hey Jyoti");
+    </script>
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#hide").click(function() {
+                    $("#text").hide();
+                });
+                $("#show").click(function() {
+                    $("#text").slideDown();
+                });
+            });
+        </script>
+
+
+        <script>
+            $(document).ready(function() {
+                $("#fadIn").click(function() {
+                    $("#div1").fadeIn();
+                    $("#div2").fadeIn("slow");
+                    $("#div3").fadeIn(3000);
+                });
+            });
+            $(document).ready(function() {
+                $("#fadout").click(function() {
+                    $("#div1").fadeOut(3000);
+                    $("#div2").fadeOut("slow");
+                    $("#div3").fadeOut(1000);
+                });
+            });
+        </script>
+    </head>
+
+
+    <p id="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis ab sequi error sed esse id nisi officiis? Quod, ad reprehenderit? Saepe, ipsa expedita magnam nemo perspiciatis natus quam nobis corrupti. Lorem ipsum, dolor sit amet consectetur adipisicing
+        elit. Nobis ab sequi error sed esse id nisi officiis? Quod, ad reprehenderit? Saepe, ipsa expedita magnam nemo perspiciatis natus quam nobis corrupti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis ab sequi error sed esse id nisi
+        officiis? Quod, ad reprehenderit? Saepe, ipsa expedita magnam nemo perspiciatis natus quam nobis corrupti.</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button> <br><br>
+
+
+    <button id="fadIn">click to fade in boxes</button>
+    <button id="fadout">click to fade out boxes</button> <br><br><br><br>
+
+    <div id="div1" style="height: 80px;width: 90px;background-color: rebeccapurple; display: none;"></div>
+    <div id="div2" style="height: 80px;width: 90px;background-color: rgb(255, 221, 0);display: none;"></div>
+    <div id="div3" style="height: 80px;width: 90px;background-color: rgb(242, 23, 158);display: none;"></div>
+
+
+
+</body>
+
+</html>
